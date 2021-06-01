@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', Arial;
+}
+html {
+    background: url(./img/background.jpeg) bottom center;
+    background-size: cover;
+    font-size: 10px;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+/* The flex property sets the flexible length on flexible items. */
+.title {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 75vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+/* red-green-blue-alpha */
+/* RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color. */
+  .key {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: .5rem;
+    font-size: 1.5rem;
+    padding: .5rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #ffc600;
+  }
+
+@media (min-width:600px) {
+    .keys {
+        margin: 20px;
+    }
+    .title {
+        font-size: 3rem;
+    }
+}
